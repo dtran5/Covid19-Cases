@@ -3,6 +3,7 @@ import Searchbar from './Searchbar';
 import '../assets/App.scss';
 import '../assets/Searchbar.scss';
 
+console.log(process.env.REACT_APP_UNSPLASH_API_KEY);
 
 const App = () => {
     return (
