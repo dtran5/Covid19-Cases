@@ -3,6 +3,7 @@ import Searchbar from './Searchbar';
 import '../assets/App.scss';
 import '../assets/Searchbar.scss';
 
+
 const App = () => {
     return (
         <div className="app">
@@ -27,3 +28,4 @@ export default App
 //could still use a refactor possibly
 //fix loading spinner to run only when actually loading
 //event handlers/forms
+//hide api key

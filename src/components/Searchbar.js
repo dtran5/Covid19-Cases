@@ -39,13 +39,14 @@ const Searchbar = () => {
     console.log(response.data[0]);
     setResults(response.data)
     setLoading(true)
+    
 }
 
     const searchImage = async () => {
         
         const response = await axios.get('https://api.unsplash.com/search/photos', {
         headers: {
-            Authorization: 'Client-ID Yjpz7_TcKwM2UUEYgZ5t7EC71ElKGdjbV7Zej-6TwyE'
+            Authorization: process.env.REACT_APP_UNSPLASH_API_KEY
         },
         params: {
             query: country
